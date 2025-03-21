@@ -116,7 +116,9 @@ const submitData = async () => {
           message = 'แก้ไขข้อมูลเรียบร้อย'
           console.log('response',response.data)
         }
-
+        setTimeout(() => {
+            window.location.href = 'user.html'
+        }, 250);
         messageDOM.innerText = message
         messageDOM.className = 'message success'
     } catch (error) {

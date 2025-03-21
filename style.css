@@ -4,58 +4,105 @@
             font-family: 'Kanit';
             src: url('./Kanit/Kanit-Regular.ttf');
           }
-        body {
-            font-family: 'Kanit'; 
+        body { //เปลี่ยนสีพื้นหลังหน้าเว็บ
+            font-family: 'Kanit';
+            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url('viewy.jpg');
+            background-size: cover;
+            border-radius: 20px;
+            margin: 0;  
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 0px;
         }
         .container {
-            background: linear-gradient(45deg, cyan, salmon);
+            font-family: 'Kanit';
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url('OIP.jpg');
+            background-size: cover;
+            overflow: hidden;
+            color: white;
             width: 100%;
             max-width: 640px;
             margin-left: auto;
             margin-right: auto;
-            padding: 20px;
+            padding: 40px;
             box-sizing: border-box;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
         }
         .header {
             font-size: 30px;
             text-align: center;
             margin-bottom: 20px;
+            
         }
         .header-form {
             width: 140px;
+            front-weight: normal;
+            margin-bottom: 10px;
+            padding-left: 10px;
         }
+        // flex(gender)
         .flex {
-            display: flex;
-        }
-        .form-input {
             margin-bottom: 10px;
         }
-        input.form, textarea {
+        
+        .form-input {
+            margin-bottom: 10px;
+            padding-right: 40px;
+        }
+        input.form , textarea {
             border: 1px solid #ccc;
+            background: rgba(255, 255, 255, 0.3);
+            color: white;
+            letter-spacing: 1px;
+            border: 0;
+            border-radius:5px;
             width: 100%;
+            height: 35px;
+            padding-left: 10px;
+            max-width: 100%;
+        }
+        input.form:hover, textarea:hover {
+            background: rgba(255, 255, 255, 0.5);
+            cursor: pointer;
         }
         .center {
             text-align: center;
         }
         .button {
-            background-color: aquamarine;
+            font-family: 'Kanit';
+            font-size: 15px;
+            background: rgb(45, 126 , 231);
+            border-radius: 10px;
             border: 0;
             width: 50%;
-            height: 40px;
+            height: 50px;
+            color: white;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+            transition: 0.1s;
+        }
+        button:hover {
+            background: #22b14c;
+            cursor: pointer;
+            transition: 0.3s;
         }
         .message {
             margin-buttom: 10px;
             padding: 15px;
             background-color: lightgray;
+            color: black;
             display: none;
         }
         .message.success {
             background-color: lightgreen;
             display: block;
+            margin-bottom: 20px;
         }
         .message.danger {
             background-color: lightcoral;
             display: block;
+            margin-bottom: 20px;
         }
 
         @media screen and (max-width: 768px) {
